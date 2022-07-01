@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+name = "private"
+url = "http://localhost:3141/testuser/dev/"
+verify_ssl = false
+
+[packages]
+pipenv-github-issue-5100 = {version=">=0.0.0,<1.0.0", index="private"}
+
+[dev-packages]
+devpi-client = "*"
+devpi-server = "*"
+devpi-web = "*"
+invoke = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = false

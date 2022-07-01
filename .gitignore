@@ -1,0 +1,14 @@
+*.bak
+*.retry
+*.zip
+*.log
+
+build/
+dist/
+gen-config/
+src/*.egg-info
+tmp/
+out/
+target/
+
+Pipfile.lock
